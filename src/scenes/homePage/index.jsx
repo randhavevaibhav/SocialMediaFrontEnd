@@ -3,6 +3,7 @@ import NavBar from "../navbar/index";
 import { useSelector } from "react-redux";
 import UserWidget from "../widgets/UserWidget";
 import MyPostWidget from "../widgets/MyPostWidget";
+import PostsWidget from "scenes/widgets/PostsWidget";
 const HomePage = () => {
   const isNonMobileScreens = useMediaQuery("(min-width:1000px)");
   const { _id, picturepath } = useSelector((state) => state.user);
@@ -26,6 +27,7 @@ const HomePage = () => {
 
 
         <MyPostWidget picturePath={picturepath}/>
+        <PostsWidget userId={_id}/>
 
         </Box>
 

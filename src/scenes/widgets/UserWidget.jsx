@@ -2,7 +2,7 @@ import {
   ManageAccountsOutlined,
   EditOutlined,
   LocationOnOutlined,
-  workOutlineOutlined,
+  WorkOutlineOutlined,
   WorkOutlineRounded,
 } from "@mui/icons-material";
 import { Box, Typography, Divider, useTheme } from "@mui/material";
@@ -93,7 +93,7 @@ const UserWidget = ({ userId, picturePath }) => {
           </Box>
 
           <Box display="flex" alignItems="center" gap="1rem">
-            <workOutlineOutlined fontSize="large" sx={{ color: main }} />
+            <WorkOutlineOutlined fontSize="large" sx={{ color: main }} />
             <Typography color={medium}>{occupation}</Typography>
           </Box>
         </Box>
